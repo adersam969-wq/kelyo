@@ -29,11 +29,9 @@ class EnvironmentVariables {
   @IsString()
   DB_NAME!: string;
 
-  @IsString()
-  REDIS_HOST!: string;
+    REDIS_HOST?: string;
 
-  @IsNumber()
-  REDIS_PORT!: number;
+    REDIS_PORT?: number;
 
   @IsString()
   @MinLength(32, { message: 'JWT_ACCESS_SECRET must be at least 32 characters' })
